@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mock Exam – The Rudiments of AI</title>
+<style>
+  body{font:16px/1.6 system-ui;background:#f6f7fb;color:#222;margin:0;padding:0}
+  .sheet{max-width:900px;margin:32px auto;background:#fff;border:1px solid #ddd;
+         border-radius:12px;box-shadow:0 8px 25px rgba(0,0,0,.07);padding:24px}
+  h1{margin:0 0 10px}
+  h2{margin-top:24px;font-size:18px;border-bottom:1px dashed #ccc;padding-bottom:4px}
+  ol{margin-left:20px}
+  li{margin:12px 0}
+  textarea{width:100%;margin-top:6px;border:1px solid #ccc;border-radius:6px;
+           padding:6px;font:15px/1.4 system-ui;resize:vertical}
+  .small{height:40px}
+  .medium{height:80px}
+  .large{height:120px}
+  button{display:block;margin:20px auto;padding:10px 20px;font-size:16px;
+         border:none;border-radius:8px;background:#1a73e8;color:#fff;cursor:pointer}
+  button:hover{background:#0c56c1}
+  .result{margin-top:20px;padding:12px;border-radius:8px;display:none}
+  .correct{color:green;font-weight:bold}
+  .incorrect{color:red;font-weight:bold}
+</style>
+</head>
+<body>
+<div class="sheet">
+  <h1>Mock Examination – The Rudiments of AI</h1>
+  <p><strong>Course Code:</strong> 25UNI0130 | <strong>Total Marks:</strong> 75 | 
+  <strong>Time:</strong> 5–8 PM</p>
+
+  <!-- SECTION A -->
+  <h2>Section A – MCQ (6 × 1 = 6)</h2>
+  <ol>
+    <li>Artificial Intelligence was developed by whom in 1956?  
+      <br><em>(A) Norbert Wiener (B) John McCarthy & Alan Turing (C) Marvin Minsky (D) Judea Pearl)</em>  
+      <textarea class="small" id="q1"></textarea>
+    </li>
+    <li>Three cognitive skills of AI programming are?  
+      <br><em>(A) Planning, Emotion, Perception (B) Learning, Reasoning, Self-Correction (C) Vision, Speech, Motion (D) Memory, Empathy, Ethics)</em>  
+      <textarea class="small" id="q2"></textarea>
+    </li>
+    <li>Which AI type does not currently exist?  
+      <br><em>(A) Reactive Machines (B) Limited Memory (C) Theory of Mind (D) Rule-based)</em>  
+      <textarea class="small" id="q3"></textarea>
+    </li>
+    <li>ChatGPT was launched on:  
+      <br><em>(A) Nov 30, 2022 (B) Jan 20, 2025 (C) Dec 6, 2023 (D) Oct 1, 2021)</em>  
+      <textarea class="small" id="q4"></textarea>
+    </li>
+    <li>Deepseek R1 was launched on:  
+      <br><em>(A) Nov 30, 2022 (B) Jan 20, 2025 (C) Dec 6, 2023 (D) Jan 1, 2024)</em>  
+      <textarea class="small" id="q5"></textarea>
+    </li>
+    <li>In the Turing Test, a machine passes when:  
+      <br><em>(A) Beats human at chess (B) Writes original poetry (C) Judge can’t tell machine from human (D) Speaks multiple languages)</em>  
+      <textarea class="small" id="q6"></textarea>
+    </li>
+  </ol>
+
+  <!-- SECTION B -->
+  <h2>Section B – Short Answer (5 × 2 = 10)</h2>
+  <ol>
+    <li>Explain how AI works (learning, reasoning, self-correction).  
+      <textarea class="medium"></textarea></li>
+    <li>List any four stages of AI.  
+      <textarea class="medium"></textarea></li>
+    <li>State two advantages of AI with examples.  
+      <textarea class="medium"></textarea></li>
+    <li>What is Prompt Engineering and its importance?  
+      <textarea class="medium"></textarea></li>
+    <li>Write any four things ChatGPT cannot do.  
+      <textarea class="medium"></textarea></li>
+  </ol>
+
+  <!-- SECTION C -->
+  <h2>Section C – Long Answer (3 × 5 = 15)</h2>
+  <ol>
+    <li>Explain the four types of AI with notes on current availability.  
+      <textarea class="large"></textarea></li>
+    <li>Discuss advantages and disadvantages of ChatGPT.  
+      <textarea class="large"></textarea></li>
+    <li>Define Metaverse and describe three real use-cases.  
+      <textarea class="large"></textarea></li>
+  </ol>
+
+  <!-- SECTION D -->
+  <h2>Section D – Assertion & Reason (2 × 3 = 6)</h2>
+  <ol>
+    <li>A: AI can displace routine jobs.  
+        R: Automation enables machines to handle repetitive tasks.  
+        <br><em>Choose A/B/C/D</em>  
+        <textarea class="small" id="q7"></textarea></li>
+    <li>A: The OpenAI logo shows union of AI and human intelligence.  
+        R: It is made of two overlapping circles.  
+        <br><em>Choose A/B/C/D</em>  
+        <textarea class="small" id="q8"></textarea></li>
+  </ol>
+
+  <!-- SECTION E -->
+  <h2>Section E – Case Study (2 × 4 = 8)</h2>
+  <ol>
+    <li>Smart Traffic System infographic. (a) Two AI capabilities (b) Benefits (c) One risk.  
+      <textarea class="large"></textarea></li>
+    <li>AI in Education infographic. (a) Map to AI advantages (b) One ethical concern & mitigation.  
+      <textarea class="large"></textarea></li>
+  </ol>
+
+  <!-- SECTION F -->
+  <h2>Section F – Competency Based (3 × 10 = 30)</h2>
+  <ol>
+    <li>Design an AI Campus Assistant Chatbot (data, reasoning, feedback, safeguards, success metrics).  
+      <textarea class="large"></textarea></li>
+    <li>Compare OpenAI, Deepseek, and Meta AI (budget, team, time, strengths, limitations, users).  
+      <textarea class="large"></textarea></li>
+    <li>Propose a Metaverse-based training lab for surgeons (objectives, scenarios, tools, benefits, risks).  
+      <textarea class="large"></textarea></li>
+  </ol>
+
+  <button onclick="checkAnswers()">Submit</button>
+  <div id="result" class="result"></div>
+</div>
+
+<script>
+function checkAnswers(){
+  // correct answers map
+  const answers = {
+    q1:"B", q2:"B", q3:"C", q4:"A", q5:"B", q6:"C",
+    q7:"A", q8:"A"
+  };
+  let score = 0, total = Object.keys(answers).length;
+  let feedback = "";
+
+  for (let id in answers){
+    let val = document.getElementById(id).value.trim().toUpperCase();
+    if(val===answers[id]){
+      feedback += `Q${id.slice(1)}: <span class="correct">Correct</span><br>`;
+      score++;
+    } else {
+      feedback += `Q${id.slice(1)}: <span class="incorrect">Incorrect</span> (Ans: ${answers[id]})<br>`;
+    }
+  }
+
+  document.getElementById("result").innerHTML =
+    `<h3>Auto-check Results (MCQ + Assertion/Reason)</h3>
+     ${feedback}
+     <p><strong>Score:</strong> ${score}/${total}</p>
+     <p>Short/Long/Case/Competency answers are saved above for self-evaluation.</p>`;
+  document.getElementById("result").style.display="block";
+}
+</script>
+</body>
+</html>
+
